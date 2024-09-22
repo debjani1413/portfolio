@@ -1,0 +1,34 @@
+
+  .App {
+    overflow: scroll;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #experience {
+    position: relative;
+    margin-top: -17rem;
+    /* height: 0;  */
+    /* overflow: hidden;  */
+  }
+
+  #work {
+    position: relative;
+    width: 100vw;
+  }
+
+  .particles-container {
+    position: relative;
+    width: 100%;
+    height: fit-content; /* This will allow stars to fill the container */
+  }
+
+  .particles-container canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Ensure particles are behind the content */
+  }

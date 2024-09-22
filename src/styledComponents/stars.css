@@ -1,0 +1,9 @@
+.stars-canvas {
+  position: absolute;  /* Positioning it absolutely within its parent */
+  top: 0;              /* Align to the top */
+  left: 0;             /* Align to the left */
+  width: 100vw;       /* Full viewport width */
+  height: 250vh;   /* Full viewport height */
+  z-index: -1;        /* Send it to the back */
+  overflow: hidden;    /* Prevent overflow */
+}

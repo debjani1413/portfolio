@@ -1,0 +1,49 @@
+.exp {
+  position: relative;
+  height: fit-content;
+  /* top: -17rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensure the heading stays centered */
+}
+
+.text {
+  position: relative;
+  top: 18rem;
+  font-size: 3vw; /* Font size responsive to viewport width */
+  margin: 1rem; /* Add some margin for spacing */
+  text-align: center; /* Ensure text is centered */
+}
+
+.timeline {
+  position: relative;
+  top: -2rem;
+  width: 100vw;
+  padding: 100px 0 40px 0;
+  height: fit-content;
+  /* background-color: #151030; */
+  background-color: #151030;
+  z-index: -10;
+}
+
+@media screen and (max-width: 768px) {
+  /* .exp {
+    top: -10rem; /
+  } */
+
+  .text {
+    top: 10rem;
+    font-size: 5vw; /* Increase font size on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* .exp {
+    top: -5rem; 
+  } */
+
+  .text {
+    top: 5rem;
+    font-size: 6vw; /* Larger font size for smaller screens */
+  }
+}

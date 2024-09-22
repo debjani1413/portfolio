@@ -1,0 +1,47 @@
+.skill {
+    width: 100vw;
+    height: 100vh;
+    position: relative; /* Context for absolutely positioned children */
+    padding-bottom: 5rem; 
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center; /* Center the slider */
+    align-items: center; /* Center the slider vertically if needed */
+}
+
+.planet-container {
+    position: absolute; /* Allow for positioning relative to the skill container */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Align to the left */
+    padding: 20px; /* Space from the edges */
+    width: 20rem; /* Adjust size as needed */
+    height: 20rem; /* Adjust size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wave-container {
+    position: absolute; /* Positioning context for waves */
+    bottom: -2rem; /* Adjust to your needs */
+    left: 0;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust as necessary */
+    z-index: -1; /* Ensure waves are behind content */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .skill {
+        padding-bottom: 10rem; /* Space for the waves */
+    }
+    
+    .planet-container {
+        /* position: static;  */
+        width: 18rem; 
+        height: 18rem; 
+        margin: 0 auto; 
+    }
+}

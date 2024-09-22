@@ -1,0 +1,59 @@
+/* General navbar styles */
+.nav {
+  top: 0;
+  left: 50%;
+  width: 30%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0; /* Ensure there's no default padding */
+}
+
+.li {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.li:hover {
+  color: rgb(207, 159, 255); /* Hover color */
+}
+
+.li.active {
+  color: rgb(207, 159, 255); /* Color for the active page */
+}
+
+/* Responsive styles */
+@media (max-width: 820px) {
+  .li {
+    font-size: 16px; /* Decrease text size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: 50%; /* Adjust width for smaller screens */
+  }
+
+  .li {
+    font-size: 15px; /* Decrease text size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    width: 70%; /* Adjust width for smaller screens */
+  }
+
+  .li {
+    font-size: 14px; /* Decrease text size for small screens */
+  }
+}

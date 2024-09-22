@@ -1,0 +1,16 @@
+.work-container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.work-slider {
+  margin-top: 5rem;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 2rem;
+}
+
+.work-slider::-webkit-scrollbar{
+  display: none;
+}

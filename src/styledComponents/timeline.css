@@ -1,0 +1,48 @@
+/* Styles for ExperienceCard Component */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .experience-icon {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+  
+  /* Adding consistent margin-left for title, company, and points */
+  .experience-content {
+    margin-left: 20px; 
+  }
+  
+  .experience-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .experience-company {
+    color: #a0aec0;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    top: -20px;
+  }
+  
+  .experience-points {
+    margin-left: -25px;
+    margin-top: -2px;
+    list-style-type: disc;
+    line-height: 1.75;
+  }
+  
+  .experience-points li {
+    color: #f7fafc;
+    font-size: 14px;
+    padding-left: 0.25rem; 
+    letter-spacing: 0.05em;
+  }
+  

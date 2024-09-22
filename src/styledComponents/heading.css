@@ -1,0 +1,17 @@
+.heading {
+    position: relative;
+    margin-bottom: -6rem;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+}
+

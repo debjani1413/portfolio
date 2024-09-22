@@ -1,0 +1,50 @@
+.intro {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allows elements to wrap on smaller screens */
+}
+
+/* Image styling */
+img {
+  max-width: 100%; /* Ensures the image scales with the container */
+  cursor: pointer;
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%;
+  width: 30rem; /* Set a base width for larger screens */
+  height: 30rem; /* Set a base height for larger screens */
+}
+
+.content {
+  position: relative;
+}
+
+p {
+  color: white;
+  font-size: 1rem; /* Base font size */
+}
+
+/* Media queries for smaller screen sizes */
+@media (max-width: 768px) {
+  img {
+    width: 23rem; /* Reduce size for tablets */
+    height: 23rem;
+  }
+
+  p {
+    font-size: 0.7rem; /* Decrease font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    width: 20rem; /* Further reduce size for mobile screens */
+    height: 20rem;
+  }
+
+  p {
+    font-size: 0.4rem; /* Further decrease font size for mobile screens */
+  }
+}

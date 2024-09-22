@@ -1,0 +1,75 @@
+.wt {
+  background: transparent;
+}
+
+.square {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 900;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  cursor: default;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.square:hover {
+  /* color: #fd0866; */
+  color: rgb(207, 159, 255);
+}
+
+/* Keyframes for rubberBand animation */
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .square {
+    font-size: 80px; /* Slightly smaller for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .square {
+    font-size: 60px; /* Smaller font size for tablets and small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .square {
+    font-size: 40px; /* Even smaller font size for mobile screens */
+  }
+}
