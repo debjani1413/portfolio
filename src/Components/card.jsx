@@ -1,9 +1,10 @@
 import React from "react";
 import "../styledComponents/card.css";
 
-const Card = ({ image, tag, desc }) => {
+const Card = ({ image, tag, desc,link }) => {
   console.log(image)
   return (
+    <a href={link} target="_blank" rel="noopener noreferrer">
     <div className="container" style={{ backgroundImage: `url(${image})` }}>
       <div className="overlay">
         <div className="card head">
@@ -15,6 +16,7 @@ const Card = ({ image, tag, desc }) => {
         </div>
       </div>
     </div>
+    </a>
   );
 }
 

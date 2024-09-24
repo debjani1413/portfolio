@@ -10,7 +10,7 @@ const Work = () => {
       <Headings text={"Projects"} />
       <div className='work-slider'>
         {workData.map((workData,index) => (
-          <Card key={index} image={workData.image} tag={workData.tag} desc={workData.desc} />
+          <Card key={index} image={workData.image} tag={workData.tag} desc={workData.desc} link={workData.link} />
         ))}
         {/* <Card  image={image} tag={"tag"} desc={"desc"} /> */}
       </div>
